@@ -28,7 +28,7 @@ python -m SimpleHTTPServer
 # ...or if using Python 3
 python -m http.server 8000
 # if you're on a Mac, do...
-open http://localhost:8000/web/viewer.html
+open http://localhost:8000
 # if you're not, open your browser to that URL
 ```
 
@@ -41,7 +41,7 @@ The `viewer.html` file supports a `file` query parameter, so requesting a
 different PDF hosted under this same domain, looks like this:
 
 ```
-http://localhost:8000/web/viewer.html?file=%2Fyourpdf.pdf
+http://localhost:8000?file=%2Fyourpdf.pdf
 ```
 
 `%2F` is the URL escaped form of `/`--so this assumes you have a `yourpdf.pdf`
